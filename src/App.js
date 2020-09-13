@@ -1,25 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{useEffect, useState} from 'react'
+import LayoutHome from "./layouts/layoutHome";
+import Screen from "./helpers/screen"
 import './App.css';
 
-function App() {
+const App = () => {
+
+  const [deviceWidth,setdeviceWidth]=useState(window.innerWidth);
+
+
+  useEffect(()=>{
+     setdeviceWidth(Screen(deviceWidth))
+     window.addEventListener('resize', orientation);
+     
+     return () => 
+     {
+         
+         window.removeEventListener('resize', orientation);
+     }
+
+    },[])
+  
+  
+  const orientation=()=>
+    {
+      setdeviceWidth(Screen(window.innerWidth))
+    }
+  
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <div style={{fontSize:deviceWidth[1]+"px"}} className="App">
+
+            <LayoutHome />
+            
+          </div>
   );
 }
 

@@ -1,38 +1,159 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+}
+p, h1, h2, h3, h4{
+  margin: 0em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fc-primary{
+  color:#00C2FF
+}
+.fc-secondary{
+  color:white
+}
+.fc-terciary{
+  color:#FF7A00
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs-1{
+  font-size: 1em;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fs-1-5{
+  font-size: 1.5em
+}
+.fs-2{
+  font-size: 2em;
+}
+.perfectCentered{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.tx-c{
+  text-align: center;
+}
+.fw-600{
+  font-weight: 600;
+
+}
+.pt-3{
+  padding-top:3em
 }
 
-.App-link {
-  color: #61dafb;
+
+
+#header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+#nav{
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nameAcademy div{
+  position: relative
+  ;
 }
+#nameAcademy div p:nth-child(1){
+  font-size: 2em;
+
+}
+#nameAcademy div p:nth-child(2){
+  font-size: 1.5em;
+  position: absolute;
+  top: 1.2em;
+  left: 2.8em;
+
+}
+
+
+
+#layoutHome{
+
+  height: 80vh;
+  background:#000000
+
+}
+#interactionHome{
+  height: 50vh;
+  background:linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceMobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  position: relative;
+}
+
+#titleOfInteractionHome{
+    width:100%;
+    padding:1em;
+}
+#borderInteractionHome
+  {
+    display:none;
+    position: absolute;
+    border: 0.3em solid #00C2FF;
+    border-bottom: none;
+    height: 102%;
+    width: 95%;
+    border-radius: 8em 0em 17em 0em;
+    top: 1em;
+    border-bottom-color: #00C2FF00;
+    border-right: 0.2em solid #00C2FF;
+    border-left: 0.2em solid #00C2FF;
+
+}
+@media only screen and (min-width: 992px) 
+{
+
+  #header{
+    height: 10vh;
+    justify-content: flex-end;
+  }
+  #layoutHome{
+    height: 100vh;
+  }
+  #interactionHome
+    {
+      height: 80vh;
+      background: linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceDesktop.jpg");
+      background-size: cover;
+      border-radius: 30em 0em 35em 0em;
+      border: 0.2em solid blue;
+      width: 98%;
+      background-position-y: -8em;
+  }
+  #nav{
+
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width:50vw;
+    height: 100%;
+    margin-right: 3vw;
+  }
+  #nameAcademy{
+    position: absolute;
+    left: 4em;
+    top:1em
+  }
+  #nameAcademy div p:nth-child(1) {
+    font-size: 4em;
+}
+  #nameAcademy div p:nth-child(2)  {
+    font-size: 2.5em;
+    position: absolute;
+    top: 1.5em;
+    left: 4.3em;
+}
+     
+
+
+
+}
+
+
+
+
+

@@ -1,10 +1,13 @@
 *{
   box-sizing: border-box;
+  margin:0em
 }
 p, h1, h2, h3, h4{
   margin: 0em;
 }
-
+.st0{
+  fill: white;
+}
 .fc-primary{
   color:#00C2FF
 }
@@ -18,41 +21,138 @@ p, h1, h2, h3, h4{
 .fs-1{
   font-size: 1em;
 }
+.fs-1-3{
+  font-size: 1.3em;
+}
 .fs-1-5{
   font-size: 1.5em
 }
 .fs-2{
   font-size: 2em;
 }
-.perfectCentered{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.fs-2-3{
+  font-size: 2.3em;
 }
-.tx-c{
-  text-align: center;
+.fs-3{
+  font-size: 3em;
+}
+.fs-4{
+  font-size: 4em;
+}
+.font-primary{
+  font-family: sedgWick;
+}
+.font-secondary {
+  font-family: workSans;
+}
+.font-secondaryTitle{
+  font-family: workSansTitle;
 }
 .fw-600{
   font-weight: 600;
 
 }
-.pt-3{
-  padding-top:3em
+.perfectCentered{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tx-c{
+  text-align: center;
+}
+.tx-s{
+  text-align:start;
+}
+.tx-e{
+  text-align: end;
+}
+.tx-j{
+  text-align: justify;
 }
 
 
+
+.pt-3{
+  padding-top:3em
+}
+.w-80{
+  width:80%
+}
+.w-100{
+  width: 100%;
+}
+.h-100{
+  height: 100%;
+}
+.h-100vh{
+  height: 100vh;
+}
+
+.pR{
+  position:relative
+}
+.pA{
+  position: absolute;
+}
+
+
+
+.df{
+  display: flex;
+}
+.fdc{
+  flex-direction: column;
+}
+
+
+.mb-05{
+  margin-bottom: 0.5em;
+}
+.mb-1{
+  margin-bottom: 1em;
+}
+.mb-2{
+  margin-bottom: 2em;
+}
+
+.mb-3{
+  margin-bottom: 3em;
+}
+.ptop-5{
+  padding-top:5em;
+}
+
+.pbothLR{
+  padding : 0 2em
+}
+.pbothLR div:nth-child(1) {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+}
+
+.iconsLayoutService{
+  fill: #00C2FF;
+    height: 2em;
+    width: 3em;
+}
 
 #header{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 30vh;
+  height: 10vh;
 }
 #nav{
   display: none;
 }
 
-#nameAcademy div{
+#nameAcademy{
+  display: none;
+}
+/*#nameAcademy div{
   position: relative
   ;
 }
@@ -67,17 +167,17 @@ p, h1, h2, h3, h4{
   left: 2.8em;
 
 }
-
+*/
 
 
 #layoutHome{
 
-  height: 80vh;
+  height: 100vh;
   background:#000000
 
 }
 #interactionHome{
-  height: 50vh;
+  height: 90vh;
   background:linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceMobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,8 +186,17 @@ p, h1, h2, h3, h4{
 }
 
 #titleOfInteractionHome{
+  position: relative;
+  background: linear-gradient(45deg, black, transparent);
     width:100%;
     padding:1em;
+}
+#titleOfInteractionHome p:nth-child(2){
+  position: absolute;
+  top: 11.7em;
+    left: 4em;
+
+
 }
 #borderInteractionHome
   {
@@ -104,56 +213,300 @@ p, h1, h2, h3, h4{
     border-left: 0.2em solid #00C2FF;
 
 }
+#layoutWhatIs{
+  height: auto;
+  flex-direction: column;
+}
+#imgWhatIs
+{
+  height: 10em;
+  width: 100%;
+  background: url("./assets//img/hard-working.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 3em 3em 0 0;
+  
+
+}
+#whatIsText{
+  height: 100%;
+  width: 100%;
+  padding: 4em 2em;
+}
+#titleWhatIs{
+  background:black;
+  height: 10em;
+  width: 100%;
+  border-radius: 2em;
+
+}
+#titleWhatIs ~ div{
+  padding:0em;
+  text-align: start;
+}
+#titleWhatIs p:nth-child(4){
+  position: absolute;
+  bottom: -0.2em;
+  color: white;
+  right: -0.5em;
+  font-size: 6em;
+}
+#layoutTeam{
+  display: none;
+  justify-content: space-between;
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00FF85 100%),url("./assets/img/hard-working.jpg");
+  background-blend-mode: normal, multiply, multiply;
+  background-size: cover;
+  background-position: center;
+  padding: 6%;
+
+  height: 100vh;
+  width: 100%;
+}
+.mentorContainer{
+  height: 70%;
+  width: 20%;
+}
+#layoutService{
+  display: flex;
+  background: black;
+  flex-direction: column;     
+  padding: 15% 5%;
+}
+#titleService{
+  font-size: 2.5em;
+  text-align: center;
+}
+#serviceDivTwo{
+  padding-top: 0em;
+}
+.itemServiceTitle{
+  letter-spacing: 0.06em;
+
+}
+.itemServiceTitle, .itemServiceText{
+  font-size: 1em;
+  text-align: start;
+  
+}
+.mbItemsService{
+  margin-bottom: 1.5em;
+}
+#titlePaths{
+  background: #009BF2;
+  background-blend-mode: darken;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 0.5em 0em;
+}
+.svgPaths{
+  height: 5em;
+  width: 5em;
+}
+#titlePaths ~ div{
+  display: flex;
+  flex-direction: column;
+  padding: 15% 0%;
+}
+#layoutContact{
+
+  background: black;
+  padding: 10% 5%;
+}
+.svgContact{
+  fill:white;
+  width: 2em;
+  height: 2em;
+  margin-left: 1em;
+}
+#worldSvg{
+  width:16em;
+  height: 10em;
+  margin-bottom: 2em;
+}
+input{
+  width: 80%;
+    height: 2.5em;
+}
+
+
+
+
+
 @media only screen and (min-width: 992px) 
 {
 
-  #header{
-    height: 10vh;
-    justify-content: flex-end;
-  }
-  #layoutHome{
-    height: 100vh;
-  }
-  #interactionHome
-    {
-      height: 80vh;
-      background: linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceDesktop.jpg");
-      background-size: cover;
-      border-radius: 30em 0em 35em 0em;
-      border: 0.2em solid blue;
-      width: 98%;
-      background-position-y: -8em;
-  }
-  #nav{
+            #header{
+              height: 10vh;
+              justify-content: flex-end;
+            }
+            #layoutHome{
+              height: 100vh;
+            }
+            #containerInteractionHome
+              {
+                height: 80vh;
+                width: 100%;
+                margin-top: 5vh;
+                padding: 0px 1em 0 2em;
+            }
+            #titleOfInteractionHome{
+              position: relative;
+              background:none;
+                width:38em;
+                padding:1em;
+            }
+            #titleOfInteractionHome p:nth-child(2){
+              position: absolute;
+              top:4.7em;
+              left:12em
+            
+            
+            }
+            #interactionHome{
+              background: linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceDesktop.jpg");
+              background-size: cover;
+              border-radius: 35em 0em 35em 0em;
+              border: 0.2em solid blue;
+              width: 100%;
+              height: 100%;
+              background-position-y: -8em;
+          
+            }
+            #nav{
 
-    display:flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width:50vw;
-    height: 100%;
-    margin-right: 3vw;
-  }
-  #nameAcademy{
-    position: absolute;
-    left: 4em;
-    top:1em
-  }
-  #nameAcademy div p:nth-child(1) {
-    font-size: 4em;
+              display:flex;
+              justify-content: space-around;
+              align-items: flex-end;
+              width:50vw;
+              height: 100%;
+              margin-right: 3vw;
+            }
+            #nameAcademy{
+              display: flex;
+              position: absolute;
+              left: 4em;
+              top:6vh
+            }
+            #nameAcademy div p:nth-child(1) {
+              font-size: 2.5em;
+          }
+            #nameAcademy div p:nth-child(2)  {
+              font-size: 1em;
+              position: absolute;
+              top: 2.4em;
+              left: 7.6em;
+          }
+          #layoutWhatIs{
+            height: 100vh;
+            flex-direction:row;
+          }
+          #whatIsText{
+            height: 100%;
+            width: 60%;
+            padding: 4em 2em;
+            margin-left: 40%;
+          }
+          #titleWhatIs ~ div{
+            padding:0em 4em;
+            text-align: justify;
+          }
+          #imgWhatIs{
+            position: absolute;
+            background: url("./assets//img/hard-working.jpg");
+            background-size: cover;
+            background-position: center;
+            border-radius: 0 35em 35em 0;
+            width: 40%;
+            height: 100%;
+
+          }
+          #layoutTeam{
+            display: flex;
+            justify-content: space-between;
+            background:linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00FF85 100%),url("./assets/img/hard-working.jpg");
+            background-blend-mode: normal, multiply, multiply;
+            background-size: cover;
+            background-position: center;
+            padding: 6%;
+
+            height: 100vh;
+            width: 100%;
+          }
+          .mentorContainer{
+            height: 70%;
+            width: 20%;
+          }
+          #layoutService{
+          flex-direction: row; 
+          padding: 5%;      
+          
+          }
+          #titleService{
+            font-size: 4em;
+            text-align: start;
+          }
+          .iconsLayoutService{
+              height: 6em;
+              width: 8em;
+          }
+          #serviceDivTwo{
+            padding-top: 4.5em;
+          }
+          .itemServiceTitle{
+            font-size: 2em;
+          }
+          .itemServiceText{
+            font-size: 1.5em;
+          }
+          .mbItemsService{
+            margin-bottom: 3em;
+          }
+          #titlePaths{
+            font-size: 5em;
+            text-align: center;
+            padding: 0.1em 0em;
+          }
+          .containerPaths{
+            display: flex;
+          }
+          #titlePaths ~ div{
+            padding: 10% 10%;
+          }
+          .pbothLR div:nth-child(1) {
+           
+            flex-direction: row;
+            
+          }
+          #layoutContact{
+            display: flex;
+            flex-direction:row;
+            padding: 5%;
+
+          }
+          #layoutContact div:nth-child(1),#layoutContact div:nth-child(2){
+            width: 50%;
+
+          }
+          #worldSvg {
+            width: 20em;
+            height: 15em;
+          }
+
+
 }
-  #nameAcademy div p:nth-child(2)  {
-    font-size: 2.5em;
-    position: absolute;
-    top: 1.5em;
-    left: 4.3em;
+
+@font-face{
+  font-family: sedgWick;
+  src:url("./fonts/SedgwickAve-Regular.ttf")
 }
-     
-
-
-
+@font-face{
+  font-family: workSans;
+  src: url("./fonts/WorkSans-Regular.ttf");
 }
-
-
-
+@font-face{
+  font-family: workSansTitle;
+  src: url("./fonts/WorkSans-Black.ttf");
+}
 
 

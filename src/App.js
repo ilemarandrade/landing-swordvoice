@@ -2,6 +2,11 @@ import React,{useEffect, useState} from 'react'
 import LayoutHome from "./layouts/layoutHome";
 import Screen from "./helpers/screen"
 import './App.css';
+import LayoutWhatIs from './layouts/layoutWhatIs';
+import LayoutTeam from './layouts/layoutTeam';
+import LayoutService from "./layouts/layoutService"
+import LayoutPath from "./layouts/layoutPath"
+import LayoutContact from './layouts/layoutContact';
 
 const App = () => {
 
@@ -31,6 +36,11 @@ const App = () => {
           <div style={{fontSize:deviceWidth[1]+"px"}} className="App">
 
             <LayoutHome />
+            <LayoutWhatIs />
+            <LayoutTeam/>
+            <LayoutService/>
+            <LayoutPath/>
+            <LayoutContact/>
             
           </div>
   );

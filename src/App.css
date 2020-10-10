@@ -104,6 +104,11 @@ p, h1, h2, h3, h4{
 .fdc{
   flex-direction: column;
 }
+.dfJ-end{
+  display:flex;
+  justify-content:flex-end;
+
+}
 
 
 .mb-05{
@@ -325,10 +330,47 @@ p, h1, h2, h3, h4{
   margin-bottom: 2em;
 }
 input{
-  width: 80%;
+    width: 100%;
     height: 2.5em;
+    border: none;
+    border-radius: 0.4em;
 }
+#nameAcademyContact div p:nth-child(1) {
+  font-size: 3.5em;
+}
+#nameAcademyContact div p:nth-child(2)  {
+  font-size: 2em;
+  position: absolute;
+  top: 1.6em;
+  left: 4.3em;
+}
+textarea{
+  width:100%;
+  height: 7.5em;
+  min-width: 100%;
+  min-height: 7.5em;
+  max-height: 18em;
+  max-width: 100%;
+  border: none;
+  border-radius: 0.4em;
+}
+.pbothLR-containerInput{
+  padding:0em 2em;
+}
+#titleContact{
+  font-size:3.5em
+}
+#sendForm
+{
+  color: #FF7A00;
+  font-family: workSansTitle;
+  width: auto !important;
 
+}
+#worldSvg {
+  width: 16em;
+  height: 14em;
+}
 
 
 
@@ -492,6 +534,14 @@ input{
             width: 20em;
             height: 15em;
           }
+          .pbothLR-containerInput{
+            padding:0em 3em;
+          }
+          #titleContact{
+            font-size:4em
+          }
+        
+      
 
 
 }

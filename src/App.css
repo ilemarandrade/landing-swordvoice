@@ -110,7 +110,9 @@ p, h1, h2, h3, h4{
 
 }
 
-
+.mb-0{
+  margin-bottom: 0 !important;
+}
 .mb-05{
   margin-bottom: 0.5em;
 }
@@ -371,6 +373,24 @@ textarea{
   width: 16em;
   height: 14em;
 }
+#icoMenu
+{
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  height: 3.5em;
+  width: 3.5em;
+  border-radius: 2em;
+  background: #FF7A00;
+  z-index: 1;
+}
+.lineMenu
+{
+  height: 5%;
+  width: 65%;
+  background: white;
+  margin-bottom: 8%;
+}
 
 
 
@@ -384,6 +404,10 @@ textarea{
             }
             #layoutHome{
               height: 100vh;
+            }
+            #icoMenu
+            {
+              display: none;
             }
             #containerInteractionHome
               {

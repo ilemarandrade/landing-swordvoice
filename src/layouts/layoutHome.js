@@ -1,5 +1,4 @@
 import React from "react"
-import MenuMobile from "../componentes/menuMobile.js"
 
 
 
@@ -28,9 +27,6 @@ const LayoutHome = () =>
                         <div>Contactenos</div>
 
                     </div>
-                
-                    <MenuMobile />
-                
                 </div> 
                 
                 

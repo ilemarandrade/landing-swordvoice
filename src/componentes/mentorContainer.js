@@ -1,8 +1,5 @@
 import React from "react"
-import imgJainer from "../assets/img/jainer.png"
-import imgIlemar from "../assets/img/ilemar.png"
-import imgDany from "../assets/img/dany.png"
-import imgCarlos from "../assets/img/carlos.jpeg"
+
 
 
 
@@ -12,29 +9,28 @@ const MentorContainer = ({
                     {
                         name  :"Jainer Muñoz",
                         rol     :"Desarrollador frontend Senior",
-                        img     : imgJainer
+                        img     : "/static/media/jainer.6c9e2c01.png"
                     },
                     {
                         name  :"Ilemar Andrade",
                         rol     :"Desarrollador frontend jr",
-                        img     : imgIlemar
+                        img     : "/static/media/ilemar.d8fa6cef.png"
                     },
                     {
                         name  :"Carlos Mata",
                         rol     :"Desarrollador frontend jr",
-                        img     : imgCarlos
+                        img     : "/static/media/carlos.a09c7fa4.jpeg"
                     },
                     {
                         name  :"Danny Alvarado",
                         rol     :"UI/UX Designer",
-                        img     : imgDany
+                        img     : "/static/media/dany.078ce5c4.png"
                     }
 
                     ],
        
                 })  =>
 {
-	
 
 const mentors=dataMentors.map((e)=>
     {

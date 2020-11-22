@@ -33,13 +33,15 @@ const MentorContainer = ({
             backgroundBlendMode: 'multiply, normal',
             borderRadius: '2em',
           }}
-          className="mb-1 w-100 h-100"
+          className="margin-b-1 w-100 h-100"
         ></div>
 
         <div>
-          <p className="fc-secondary font-primary fs-1-5 mb-05">{e.name}</p>
+          <p className="font-c-secondary font-primary font-s-1-5 margin-b-05">
+            {e.name}
+          </p>
           <p
-            className="fc-secondary font-secondary mb-05"
+            className="font-c-secondary font-secondary margin-b-05"
             style={{ width: '8em' }}
           >
             {e.rol}

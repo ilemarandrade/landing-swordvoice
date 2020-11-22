@@ -2,14 +2,14 @@ import React from 'react';
 
 const LayoutService = () => {
   return (
-    <div id="layoutService" className="tx-j">
+    <div id="layoutService" className="text-align-j">
       <div>
-        <div id="titleService" className=" mb-1">
-          <p className="font-primary fc-secondary ">¿Qué incluye</p>
-          <p className="font-primary fc-primary">nuestro servicio?</p>
+        <div id="titleService" className=" margin-b-1">
+          <p className="font-primary font-c-secondary ">¿Qué incluye</p>
+          <p className="font-primary font-c-primary">nuestro servicio?</p>
         </div>
 
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@ const LayoutService = () => {
           </div>
         </div>
 
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +49,7 @@ const LayoutService = () => {
           </div>
         </div>
 
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +71,7 @@ const LayoutService = () => {
       </div>
 
       <div id="serviceDivTwo">
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ const LayoutService = () => {
           </div>
         </div>
 
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +124,7 @@ const LayoutService = () => {
           </div>
         </div>
 
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@ const LayoutService = () => {
           </div>
         </div>
 
-        <div className="fc-secondary df mbItemsService">
+        <div className="font-c-secondary display-flex mbItemsService">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"

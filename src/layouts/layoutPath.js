@@ -4,13 +4,13 @@ const LayoutPath = () => {
   return (
     <div id="layoutPath">
       <div id="titlePaths">
-        <p className="font-primary fc-secondary">
-          Nuestros <span className="fc-terciary">Paths</span>
+        <p className="font-primary font-c-secondary">
+          Nuestros <span className="font-c-terciary">Paths</span>
         </p>
       </div>
       <div>
         <div className="containerPaths">
-          <div className="mb-1 perfectCentered fdc">
+          <div className="margin-b-1 perfectCentered flex-column">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -22,8 +22,10 @@ const LayoutPath = () => {
               </svg>
             </div>
             <div>
-              <p className="font-secondaryTitle tx-c mb-1 fs-2">Iniciated:</p>
-              <p className="font-secondary pbothLR tx-c fs-1-3">
+              <p className="font-secondaryTitle text-align-c margin-b-1 font-s-2">
+                Iniciated:
+              </p>
+              <p className="font-secondary pbothLR text-align-c font-s-1-3">
                 Serás un jr Frontend Developer. Podrás crear interfaces de
                 usuario interactivas e integrarlas con servicios propios o de
                 terceros.
@@ -31,7 +33,7 @@ const LayoutPath = () => {
             </div>
           </div>
 
-          <div className="mb-2 perfectCentered fdc">
+          <div className="margin-b-2 perfectCentered flex-column">
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,8 +46,10 @@ const LayoutPath = () => {
             </div>
 
             <div>
-              <p className="font-secondaryTitle tx-c mb-1 fs-2">Wanderer</p>
-              <p className="font-secondary pbothLR tx-c fs-1-3">
+              <p className="font-secondaryTitle text-align-c margin-b-1 font-s-2">
+                Wanderer
+              </p>
+              <p className="font-secondary pbothLR text-align-c font-s-1-3">
                 Serás jr backend developer. Podrás implementar lógica de negocio
                 y crear los servicios que soportan a todas las aplicaciones web
                 modernas.
@@ -55,14 +59,14 @@ const LayoutPath = () => {
         </div>
         <div className="pbothLR">
           <div>
-            <p className="font-secondary mb-1 fs-2">
+            <p className="font-secondary margin-b-1 font-s-2">
               <span className="font-secondaryTitle">Warrior:</span> proximamente
             </p>
-            <p className="font-secondary mb-1 fs-2">
+            <p className="font-secondary margin-b-1 font-s-2">
               <span className="font-secondaryTitle">Master:</span> proximamente
             </p>
           </div>
-          <p className="font-secondary mb-1 fs-2 tx-c">
+          <p className="font-secondary margin-b-1 font-s-2 text-align-c">
             <span className="font-secondaryTitle">Ancient:</span> proximamente
           </p>
         </div>

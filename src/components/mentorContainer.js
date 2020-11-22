@@ -1,4 +1,6 @@
 import React from "react"
+import img from "../assets/img/dany.png"
+
 
 
 
@@ -27,11 +29,12 @@ const MentorContainer = ({
                         img     : "/static/media/dany.078ce5c4.png"
                     }
 
-                    ],
+                    ],  
        
                 })  =>
 {
-
+	console.log(img);
+	
 const mentors=dataMentors.map((e)=>
     {
         

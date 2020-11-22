@@ -1,12 +1,13 @@
 import React,{useEffect, useState} from 'react'
-import LayoutHome from "./layouts/layoutHome";
+import Home from "./layouts/home";
 import Screen from "./helpers/screen"
 import './App.css';
-import LayoutWhatIs from './layouts/layoutWhatIs';
-import LayoutTeam from './layouts/layoutTeam';
-import LayoutService from "./layouts/layoutService"
-import LayoutPath from "./layouts/layoutPath"
-import LayoutContact from './layouts/layoutContact';
+import {services} from "./const/propsToComponents.js"
+import WhatIs from './layouts/whatIs';
+import Team from './layouts/team';
+import Service from "./layouts/service"
+import Path from "./layouts/path"
+import Contact from './layouts/contact';
 
 const App = () => {
 
@@ -35,12 +36,12 @@ const App = () => {
   return (
           <div style={{fontSize:deviceWidth[1]+"px"}} className="App">
 
-            <LayoutHome />
-            <LayoutWhatIs />
-            <LayoutTeam/>
-            <LayoutService/>
-            <LayoutPath/>
-            <LayoutContact/>
+            <Home />
+            <WhatIs />
+            <Team/>
+            <Service {...{services}} />
+            <Path/>
+            <Contact/>
             
           </div>
   );

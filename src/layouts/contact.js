@@ -1,10 +1,15 @@
 import React from "react"
+import {Input, TextArea} from "../components/inputs.js";
+import NameAcademy from "../components/nameAcademy.js";
+import {styleNameAcademyFooter} from "../const/propsToComponents"
 
 
 const LayoutContact = () =>
 {
     return (
+
             <div id="layoutContact">
+                
                 <div className="perfectCentered fdc">
 
                     <p className="font-primary fs-4 fc-primary">Contactanos</p>
@@ -44,16 +49,15 @@ const LayoutContact = () =>
 
                 </div>
                 
-                <div className="perfectCentered fdc font-secondary">
+                <div className="pt-2 pR perfectCentered fdc font-secondary">
 
-                    <p className="fc-secondary w-80">Nombre y Apellido</p>
-                    <input type="text" className="mb-1" />
+                    <NameAcademy {...styleNameAcademyFooter} />
 
-                    <p className="fc-secondary w-80">Correo Electronico</p>
-                    <input type="text" className="mb-1" />
+                    <Input />
 
-                    <p className="fc-secondary w-80">Mensaje</p>
-                    <input type="text" />
+                    <Input />
+
+                    <TextArea/>
 
 
                 </div>

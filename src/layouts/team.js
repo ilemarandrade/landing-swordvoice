@@ -1,5 +1,5 @@
 import React from "react"
-import MentorContainer from "../componentes/mentorContainer"
+import MentorContainer from "../components/mentorContainer"
 
 const LayoutTeam = () =>
 {

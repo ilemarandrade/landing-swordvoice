@@ -6,7 +6,7 @@ import LayoutWhatIs from './layouts/layoutWhatIs';
 import LayoutTeam from './layouts/layoutTeam';
 import LayoutService from './layouts/layoutService';
 import LayoutPath from './layouts/layoutPath';
-import LayoutContact from './layouts/layoutContact';
+import LayoutContactWrap from './layouts/layoutContact/layoutContactWrap';
 
 const App = () => {
   const [deviceWidth, setdeviceWidth] = useState(window.innerWidth);
@@ -31,7 +31,7 @@ const App = () => {
       <LayoutTeam />
       <LayoutService />
       <LayoutPath />
-      <LayoutContact />
+      <LayoutContactWrap />
     </div>
   );
 };

@@ -77,6 +77,9 @@ h4 {
 .pt-3 {
   padding-top: 3em;
 }
+.w-50 {
+  width: 50%;
+}
 .w-80 {
   width: 80%;
 }
@@ -529,8 +532,8 @@ textarea {
     flex-direction: row;
     padding: 5%;
   }
-  #layoutContact div:nth-child(1),
-  #layoutContact div:nth-child(2) {
+  #layoutContact > div:nth-child(1),
+  #layoutContact > div:nth-child(2) {
     width: 50%;
   }
   #worldSvg {

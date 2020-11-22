@@ -1,137 +1,135 @@
-*{
+* {
   box-sizing: border-box;
-  margin:0em
-}
-p, h1, h2, h3, h4{
   margin: 0em;
 }
-.st0{
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0em;
+}
+.st0 {
   fill: white;
 }
-.fc-primary{
-  color:#00C2FF
+.fc-primary {
+  color: #00c2ff;
 }
-.fc-secondary{
-  color:white
+.fc-secondary {
+  color: white;
 }
-.fc-terciary{
-  color:#FF7A00
+.fc-terciary {
+  color: #ff7a00;
 }
 
-.fs-1{
+.fs-1 {
   font-size: 1em;
 }
-.fs-1-3{
+.fs-1-3 {
   font-size: 1.3em;
 }
-.fs-1-5{
-  font-size: 1.5em
+.fs-1-5 {
+  font-size: 1.5em;
 }
-.fs-2{
+.fs-2 {
   font-size: 2em;
 }
-.fs-2-3{
+.fs-2-3 {
   font-size: 2.3em;
 }
-.fs-3{
+.fs-3 {
   font-size: 3em;
 }
-.fs-4{
+.fs-4 {
   font-size: 4em;
 }
-.font-primary{
+.font-primary {
   font-family: sedgWick;
 }
 .font-secondary {
   font-family: workSans;
 }
-.font-secondaryTitle{
+.font-secondaryTitle {
   font-family: workSansTitle;
 }
-.fw-600{
+.fw-600 {
   font-weight: 600;
-
 }
-.perfectCentered{
+.perfectCentered {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.tx-c{
+.tx-c {
   text-align: center;
 }
-.tx-s{
-  text-align:start;
+.tx-s {
+  text-align: start;
 }
-.tx-e{
+.tx-e {
   text-align: end;
 }
-.tx-j{
+.tx-j {
   text-align: justify;
 }
 
-
-
-.pt-3{
-  padding-top:3em
+.pt-3 {
+  padding-top: 3em;
 }
-.w-80{
-  width:80%
+.w-80 {
+  width: 80%;
 }
-.w-100{
+.w-100 {
   width: 100%;
 }
-.h-100{
+.h-100 {
   height: 100%;
 }
-.h-100vh{
+.h-100vh {
   height: 100vh;
 }
 
-.pR{
-  position:relative
+.pR {
+  position: relative;
 }
-.pA{
+.pA {
   position: absolute;
 }
 
-
-
-.df{
+.df {
   display: flex;
 }
-.fdc{
+.fdc {
   flex-direction: column;
 }
-.dfJ-end{
-  display:flex;
-  justify-content:flex-end;
-
+.dfJ-end {
+  display: flex;
+  justify-content: flex-end;
 }
 
-.mb-0{
+.mb-0 {
   margin-bottom: 0 !important;
 }
-.mb-05{
+.mb-05 {
   margin-bottom: 0.5em;
 }
-.mb-1{
+.mb-1 {
   margin-bottom: 1em;
 }
-.mb-2{
+.mb-2 {
   margin-bottom: 2em;
 }
 
-.mb-3{
+.mb-3 {
   margin-bottom: 3em;
 }
-.ptop-5{
-  padding-top:5em;
+.ptop-5 {
+  padding-top: 5em;
 }
 
-.pbothLR{
-  padding : 0 2em
+.pbothLR {
+  padding: 0 2em;
 }
 .pbothLR div:nth-child(1) {
   display: flex;
@@ -140,23 +138,23 @@ p, h1, h2, h3, h4{
   text-align: center;
 }
 
-.iconsLayoutService{
-  fill: #00C2FF;
-    height: 2em;
-    width: 3em;
+.iconsLayoutService {
+  fill: #00c2ff;
+  height: 2em;
+  width: 3em;
 }
 
-#header{
+#header {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10vh;
 }
-#nav{
+#nav {
   display: none;
 }
 
-#nameAcademy{
+#nameAcademy {
   display: none;
 }
 /*#nameAcademy div{
@@ -176,92 +174,88 @@ p, h1, h2, h3, h4{
 }
 */
 
-
-#layoutHome{
-
+#layoutHome {
   height: 100vh;
-  background:#000000
-
+  background: #000000;
 }
-#interactionHome{
+#interactionHome {
   height: 90vh;
-  background:linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceMobile.jpg");
+  background: linear-gradient(
+      223.15deg,
+      rgba(5, 5, 5, 0) 37%,
+      rgba(0, 0, 0, 0.67) 95.63%
+    ),
+    url('./assets/img/WhatIsSwordvoiceMobile.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   position: relative;
 }
 
-#titleOfInteractionHome{
+#titleOfInteractionHome {
   position: relative;
   background: linear-gradient(45deg, black, transparent);
-    width:100%;
-    padding:1em;
+  width: 100%;
+  padding: 1em;
 }
-#titleOfInteractionHome p:nth-child(2){
+#titleOfInteractionHome p:nth-child(2) {
   position: absolute;
   top: 11.7em;
-    left: 4em;
-
-
+  left: 4em;
 }
-#borderInteractionHome
-  {
-    display:none;
-    position: absolute;
-    border: 0.3em solid #00C2FF;
-    border-bottom: none;
-    height: 102%;
-    width: 95%;
-    border-radius: 8em 0em 17em 0em;
-    top: 1em;
-    border-bottom-color: #00C2FF00;
-    border-right: 0.2em solid #00C2FF;
-    border-left: 0.2em solid #00C2FF;
-
+#borderInteractionHome {
+  display: none;
+  position: absolute;
+  border: 0.3em solid #00c2ff;
+  border-bottom: none;
+  height: 102%;
+  width: 95%;
+  border-radius: 8em 0em 17em 0em;
+  top: 1em;
+  border-bottom-color: #00c2ff00;
+  border-right: 0.2em solid #00c2ff;
+  border-left: 0.2em solid #00c2ff;
 }
-#layoutWhatIs{
+#layoutWhatIs {
   height: auto;
   flex-direction: column;
 }
-#imgWhatIs
-{
+#imgWhatIs {
   height: 10em;
   width: 100%;
-  background: url("./assets//img/hard-working.jpg");
+  background: url('./assets//img/hard-working.jpg');
   background-size: cover;
   background-position: center;
   border-radius: 3em 3em 0 0;
-  
-
 }
-#whatIsText{
+#whatIsText {
   height: 100%;
   width: 100%;
   padding: 4em 2em;
 }
-#titleWhatIs{
-  background:black;
+#titleWhatIs {
+  background: black;
   height: 10em;
   width: 100%;
   border-radius: 2em;
-
 }
-#titleWhatIs ~ div{
-  padding:0em;
+#titleWhatIs ~ div {
+  padding: 0em;
   text-align: start;
 }
-#titleWhatIs p:nth-child(4){
+#titleWhatIs p:nth-child(4) {
   position: absolute;
   bottom: -0.2em;
   color: white;
   right: -0.5em;
   font-size: 6em;
 }
-#layoutTeam{
+#layoutTeam {
   display: none;
   justify-content: space-between;
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00FF85 100%),url("./assets/img/hard-working.jpg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00ff85 100%),
+    url('./assets/img/hard-working.jpg');
   background-blend-mode: normal, multiply, multiply;
   background-size: cover;
   background-position: center;
@@ -270,84 +264,82 @@ p, h1, h2, h3, h4{
   height: 100vh;
   width: 100%;
 }
-.mentorContainer{
+.mentorContainer {
   height: 70%;
   width: 20%;
 }
-#layoutService{
+#layoutService {
   display: flex;
   background: black;
-  flex-direction: column;     
+  flex-direction: column;
   padding: 15% 5%;
 }
-#titleService{
+#titleService {
   font-size: 2.5em;
   text-align: center;
 }
-#serviceDivTwo{
+#serviceDivTwo {
   padding-top: 0em;
 }
-.itemServiceTitle{
+.itemServiceTitle {
   letter-spacing: 0.06em;
-
 }
-.itemServiceTitle, .itemServiceText{
+.itemServiceTitle,
+.itemServiceText {
   font-size: 1em;
   text-align: start;
-  
 }
-.mbItemsService{
+.mbItemsService {
   margin-bottom: 1.5em;
 }
-#titlePaths{
-  background: #009BF2;
+#titlePaths {
+  background: #009bf2;
   background-blend-mode: darken;
   font-size: 2.5em;
   text-align: center;
   padding: 0.5em 0em;
 }
-.svgPaths{
+.svgPaths {
   height: 5em;
   width: 5em;
 }
-#titlePaths ~ div{
+#titlePaths ~ div {
   display: flex;
   flex-direction: column;
   padding: 15% 0%;
 }
-#layoutContact{
-
+#layoutContact {
   background: black;
   padding: 10% 5%;
 }
-.svgContact{
-  fill:white;
+.svgContact {
+  fill: white;
   width: 2em;
   height: 2em;
   margin-left: 1em;
 }
-#worldSvg{
-  width:16em;
+#worldSvg {
+  width: 16em;
   height: 10em;
   margin-bottom: 2em;
 }
-input{
-    width: 100%;
-    height: 2.5em;
-    border: none;
-    border-radius: 0.4em;
+input {
+  width: 100%;
+  height: 2.5em;
+  border: none;
+  border-radius: 0.4em;
 }
 #nameAcademyContact div p:nth-child(1) {
   font-size: 3.5em;
 }
-#nameAcademyContact div p:nth-child(2)  {
+#nameAcademyContact div p:nth-child(2) {
   font-size: 2em;
   position: absolute;
   top: 1.6em;
   left: 4.3em;
 }
-textarea{
-  width:100%;
+textarea {
+  width: 100%;
   height: 7.5em;
   min-width: 100%;
   min-height: 7.5em;
@@ -356,231 +348,212 @@ textarea{
   border: none;
   border-radius: 0.4em;
 }
-.pbothLR-containerInput{
-  padding:0em 2em;
+.pbothLR-containerInput {
+  padding: 0em 2em;
 }
-#titleContact{
-  font-size:3.5em
+#titleContact {
+  font-size: 3.5em;
 }
-#sendForm
-{
-  color: #FF7A00;
+#sendForm {
+  color: #ff7a00;
   font-family: workSansTitle;
   width: auto !important;
-
 }
 #worldSvg {
   width: 16em;
   height: 14em;
 }
-#icoMenu
-{
+#icoMenu {
   position: absolute;
   top: 2em;
   left: 1em;
   height: 3em;
   width: 3em;
   border-radius: 2em;
-  background: #FF7A00;
+  background: #ff7a00;
   z-index: 1;
 }
-.lineMenu
-{
+.lineMenu {
   height: 5%;
   width: 65%;
   background: white;
   margin-bottom: 8%;
 }
 
+@media only screen and (min-width: 992px) {
+  #header {
+    height: 10vh;
+    justify-content: flex-end;
+  }
+  #layoutHome {
+    height: 100vh;
+  }
+  #icoMenu {
+    display: none;
+  }
+  #containerInteractionHome {
+    height: 80vh;
+    width: 100%;
+    margin-top: 5vh;
+    padding: 0px 1em 0 2em;
+  }
+  #titleOfInteractionHome {
+    position: relative;
+    background: none;
+    width: 38em;
+    padding: 1em;
+  }
+  #titleOfInteractionHome p:nth-child(2) {
+    position: absolute;
+    top: 4.7em;
+    left: 12em;
+  }
+  #interactionHome {
+    background: linear-gradient(
+        223.15deg,
+        rgba(5, 5, 5, 0) 37%,
+        rgba(0, 0, 0, 0.67) 95.63%
+      ),
+      url('./assets/img/WhatIsSwordvoiceDesktop.jpg');
+    background-size: cover;
+    border-radius: 35em 0em 35em 0em;
+    border: 0.2em solid blue;
+    width: 100%;
+    height: 100%;
+    background-position-y: -8em;
+  }
+  #nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 50vw;
+    height: 100%;
+    margin-right: 3vw;
+  }
+  #nameAcademy {
+    display: flex;
+    position: absolute;
+    left: 4em;
+    top: 6vh;
+  }
+  #nameAcademy div p:nth-child(1) {
+    font-size: 2.5em;
+  }
+  #nameAcademy div p:nth-child(2) {
+    font-size: 1em;
+    position: absolute;
+    top: 2.4em;
+    left: 7.6em;
+  }
+  #layoutWhatIs {
+    height: 100vh;
+    flex-direction: row;
+  }
+  #whatIsText {
+    height: 100%;
+    width: 60%;
+    padding: 4em 2em;
+    margin-left: 40%;
+  }
+  #titleWhatIs ~ div {
+    padding: 0em 4em;
+    text-align: justify;
+  }
+  #imgWhatIs {
+    position: absolute;
+    background: url('./assets//img/hard-working.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 35em 35em 0;
+    width: 40%;
+    height: 100%;
+  }
+  #layoutTeam {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)),
+      linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00ff85 100%),
+      url('./assets/img/hard-working.jpg');
+    background-blend-mode: normal, multiply, multiply;
+    background-size: cover;
+    background-position: center;
+    padding: 6%;
 
-
-
-@media only screen and (min-width: 992px) 
-{
-
-            #header{
-              height: 10vh;
-              justify-content: flex-end;
-            }
-            #layoutHome{
-              height: 100vh;
-            }
-            #icoMenu
-            {
-              display: none;
-            }
-            #containerInteractionHome
-              {
-                height: 80vh;
-                width: 100%;
-                margin-top: 5vh;
-                padding: 0px 1em 0 2em;
-            }
-            #titleOfInteractionHome{
-              position: relative;
-              background:none;
-                width:38em;
-                padding:1em;
-            }
-            #titleOfInteractionHome p:nth-child(2){
-              position: absolute;
-              top:4.7em;
-              left:12em
-            
-            
-            }
-            #interactionHome{
-              background: linear-gradient(223.15deg, rgba(5, 5, 5, 0) 37%, rgba(0, 0, 0, 0.67) 95.63%), url("./assets/img/WhatIsSwordvoiceDesktop.jpg");
-              background-size: cover;
-              border-radius: 35em 0em 35em 0em;
-              border: 0.2em solid blue;
-              width: 100%;
-              height: 100%;
-              background-position-y: -8em;
-          
-            }
-            #nav{
-
-              display:flex;
-              justify-content: space-around;
-              align-items: flex-end;
-              width:50vw;
-              height: 100%;
-              margin-right: 3vw;
-            }
-            #nameAcademy{
-              display: flex;
-              position: absolute;
-              left: 4em;
-              top:6vh
-            }
-            #nameAcademy div p:nth-child(1) {
-              font-size: 2.5em;
-          }
-            #nameAcademy div p:nth-child(2)  {
-              font-size: 1em;
-              position: absolute;
-              top: 2.4em;
-              left: 7.6em;
-          }
-          #layoutWhatIs{
-            height: 100vh;
-            flex-direction:row;
-          }
-          #whatIsText{
-            height: 100%;
-            width: 60%;
-            padding: 4em 2em;
-            margin-left: 40%;
-          }
-          #titleWhatIs ~ div{
-            padding:0em 4em;
-            text-align: justify;
-          }
-          #imgWhatIs{
-            position: absolute;
-            background: url("./assets//img/hard-working.jpg");
-            background-size: cover;
-            background-position: center;
-            border-radius: 0 35em 35em 0;
-            width: 40%;
-            height: 100%;
-
-          }
-          #layoutTeam{
-            display: flex;
-            justify-content: space-between;
-            background:linear-gradient(0deg, rgba(0, 0, 0, 0.19), rgba(0, 0, 0, 0.19)), linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #00FF85 100%),url("./assets/img/hard-working.jpg");
-            background-blend-mode: normal, multiply, multiply;
-            background-size: cover;
-            background-position: center;
-            padding: 6%;
-
-            height: 100vh;
-            width: 100%;
-          }
-          .mentorContainer{
-            height: 70%;
-            width: 20%;
-          }
-          #layoutService{
-          flex-direction: row; 
-          padding: 5%;      
-          
-          }
-          #titleService{
-            font-size: 4em;
-            text-align: start;
-          }
-          .iconsLayoutService{
-              height: 6em;
-              width: 8em;
-          }
-          #serviceDivTwo{
-            padding-top: 4.5em;
-          }
-          .itemServiceTitle{
-            font-size: 2em;
-          }
-          .itemServiceText{
-            font-size: 1.5em;
-          }
-          .mbItemsService{
-            margin-bottom: 3em;
-          }
-          #titlePaths{
-            font-size: 5em;
-            text-align: center;
-            padding: 0.1em 0em;
-          }
-          .containerPaths{
-            display: flex;
-          }
-          #titlePaths ~ div{
-            padding: 10% 10%;
-          }
-          .pbothLR div:nth-child(1) {
-           
-            flex-direction: row;
-            
-          }
-          #layoutContact{
-            display: flex;
-            flex-direction:row;
-            padding: 5%;
-
-          }
-          #layoutContact div:nth-child(1),#layoutContact div:nth-child(2){
-            width: 50%;
-
-          }
-          #worldSvg {
-            width: 20em;
-            height: 15em;
-          }
-          .pbothLR-containerInput{
-            padding:0em 3em;
-          }
-          #titleContact{
-            font-size:4em
-          }
-        
-      
-
-
+    height: 100vh;
+    width: 100%;
+  }
+  .mentorContainer {
+    height: 70%;
+    width: 20%;
+  }
+  #layoutService {
+    flex-direction: row;
+    padding: 5%;
+  }
+  #titleService {
+    font-size: 4em;
+    text-align: start;
+  }
+  .iconsLayoutService {
+    height: 6em;
+    width: 8em;
+  }
+  #serviceDivTwo {
+    padding-top: 4.5em;
+  }
+  .itemServiceTitle {
+    font-size: 2em;
+  }
+  .itemServiceText {
+    font-size: 1.5em;
+  }
+  .mbItemsService {
+    margin-bottom: 3em;
+  }
+  #titlePaths {
+    font-size: 5em;
+    text-align: center;
+    padding: 0.1em 0em;
+  }
+  .containerPaths {
+    display: flex;
+  }
+  #titlePaths ~ div {
+    padding: 10% 10%;
+  }
+  .pbothLR div:nth-child(1) {
+    flex-direction: row;
+  }
+  #layoutContact {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+  }
+  #layoutContact div:nth-child(1),
+  #layoutContact div:nth-child(2) {
+    width: 50%;
+  }
+  #worldSvg {
+    width: 20em;
+    height: 15em;
+  }
+  .pbothLR-containerInput {
+    padding: 0em 3em;
+  }
+  #titleContact {
+    font-size: 4em;
+  }
 }
 
-@font-face{
+@font-face {
   font-family: sedgWick;
-  src:url("./fonts/SedgwickAve-Regular.ttf")
+  src: url('./fonts/SedgwickAve-Regular.ttf');
 }
-@font-face{
+@font-face {
   font-family: workSans;
-  src: url("./fonts/WorkSans-Regular.ttf");
+  src: url('./fonts/WorkSans-Regular.ttf');
 }
-@font-face{
+@font-face {
   font-family: workSansTitle;
-  src: url("./fonts/WorkSans-Black.ttf");
+  src: url('./fonts/WorkSans-Black.ttf');
 }
-
-

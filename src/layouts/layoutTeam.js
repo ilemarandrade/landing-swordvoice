@@ -1,17 +1,12 @@
-import React from "react"
-import MentorContainer from "../componentes/mentorContainer"
+import React from 'react';
+import MentorContainer from '../componentes/mentorContainer';
 
-const LayoutTeam = () =>
-{
-    return(
-            <div id="layoutTeam">
+const LayoutTeam = () => {
+  return (
+    <div id="layoutTeam">
+      <MentorContainer />
+    </div>
+  );
+};
 
-                <MentorContainer/>
-                
-            </div>
-    )
-}
-
-
-
-export default LayoutTeam
+export default LayoutTeam;

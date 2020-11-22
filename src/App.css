@@ -9,6 +9,20 @@ h3,
 h4 {
   margin: 0em;
 }
+input,
+textarea {
+  padding: 5px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.input-error {
+  border: 2 px solid #ff7a00;
+}
+
 .st0 {
   fill: white;
 }

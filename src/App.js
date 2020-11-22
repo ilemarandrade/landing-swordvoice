@@ -6,7 +6,15 @@ import LayoutWhatIs from './layouts/layoutWhatIs';
 import LayoutTeam from './layouts/layoutTeam';
 import LayoutService from './layouts/layoutService';
 import LayoutPath from './layouts/layoutPath';
-import LayoutContactWrap from './layouts/layoutContact/layoutContactWrap';
+import LayoutContact from './layouts/layoutContact/layoutContact';
+import { ThemeProvider } from 'styled-components';
+
+const theme = {
+  palette: {
+    terciary: '#ff7a00',
+  },
+  bg: 'white',
+};
 
 const App = () => {
   const [deviceWidth, setdeviceWidth] = useState(window.innerWidth);
@@ -25,14 +33,16 @@ const App = () => {
   };
 
   return (
-    <div style={{ fontSize: deviceWidth[1] + 'px' }} className="App">
-      <LayoutHome />
-      <LayoutWhatIs />
-      <LayoutTeam />
-      <LayoutService />
-      <LayoutPath />
-      <LayoutContactWrap />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div style={{ fontSize: deviceWidth[1] + 'px' }} className="App">
+        <LayoutHome />
+        <LayoutWhatIs />
+        <LayoutTeam />
+        <LayoutService />
+        <LayoutPath />
+        <LayoutContact />
+      </div>
+    </ThemeProvider>
   );
 };
 

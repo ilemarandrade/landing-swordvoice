@@ -7,14 +7,34 @@ import LayoutContact from './layoutContact';
  * Se separa presentacion de controlador
  */
 export default () => {
-  const [form, setform] = useState(['', '', '']);
+  const [name, setname] = useState('');
+  const [email, setemail] = useState('');
+  const [message, setmessage] = useState('');
 
-  const onFormElementChange = (event, index) => {
-    const { value } = event.target;
-    const formCopy = [...form]; //me aseguro de modificar una copia del estado para asegurar inmutabilidad
-    formCopy[index] = value;
-    setform(formCopy);
+  const onFormElementChange = event => {
+    const { value, name } = event.target;
+    switch (name) {
+      case 'name': {
+        //validaciones de nombre
+        setname(value);
+        break;
+      }
+      case 'email': {
+        //validaciones de correo
+        setemail(value);
+        break;
+      }
+      case 'message': {
+        setmessage(value);
+        break;
+      }
+      default:
+        break;
+    }
   };
+
+  const form = [name, email, message];
+
   return (
     <LayoutContact form={form} onFormElementChange={onFormElementChange} />
   );

@@ -1,48 +1,61 @@
 import React from 'react';
 import World from '../../assets/img/World';
+import WebIcon from '../../assets/img/WebIcon';
 import FacebookIcon from '../../assets/img/FacebookIcon';
 import InstagranIcon from '../../assets/img/InstagranIcon';
-import WebIcon from '../../assets/img/WebIcon';
 
 /**
  * Componente de presentacion: esta solo la UI
- *
  */
 
 const LayoutContact = ({ form, onFormElementChange }) => {
   const formElements = [
     {
-      label: 'Nombre y Apellido',
-      onChange: event => onFormElementChange(event),
+      name: 'name',
+      label: 'Nombre y apellido',
+      type: 'inputText',
+      onChange: onFormElementChange,
     },
     {
-      label: 'Correo Electronico',
-      onChange: event => onFormElementChange(event),
+      name: 'email',
+      label: 'Correo electrónico',
+      type: 'inputText',
+      onChange: onFormElementChange,
     },
     {
+      name: 'message',
       label: 'Mensaje',
-      onChange: event => onFormElementChange(event),
+      type: 'textarea',
+      onChange: onFormElementChange,
     },
   ];
-
-  const formJSX = formElements.map((formElement, index) => (
+  const formMapJSX = formElements.map((formElement, index) => (
     <div className="w-50" key={index}>
       <p className="font-c-secondary">{formElement.label}</p>
-      <input
-        onChange={event => {
-          onFormElementChange(event, index);
-        }}
-        value={form[index]}
-        type="text"
-        className="margin-b-1"
-      />
+      {formElement.type.match('inputText') && (
+        <input
+          name={formElement.name}
+          onChange={formElement.onChange}
+          value={form[index]}
+          type="text"
+          className="margin-b-1"
+        />
+      )}
+      {formElement.type.match('textarea') && (
+        <textarea
+          name={formElement.name}
+          onChange={formElement.onChange}
+          value={form[index]}
+          className="margin-b-1"
+        />
+      )}
     </div>
   ));
 
   return (
     <div id="layoutContact">
       <div className="perfectCentered flex-column">
-        <p className="font-primary font-s-4 font-c-primary">Contactanos</p>
+        <p className="font-primary font-s-4 font-c-primary">Contáctanos</p>
 
         <World />
         <div className="margin-b-2">
@@ -61,7 +74,7 @@ const LayoutContact = ({ form, onFormElementChange }) => {
       </div>
 
       <div className="perfectCentered flex-column font-secondary">
-        {formJSX}
+        {formMapJSX}
       </div>
     </div>
   );

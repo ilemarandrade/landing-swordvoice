@@ -28,10 +28,12 @@ const formElements = [
 ];
 const ContactForm = () => {
   const formMapJSX = errors =>
-    formElements.map(el => {
+    formElements.map((el, i, arr) => {
       const { name, label, type } = el;
+      const isPreviousElementHasError =
+        i > 0 && errors[arr[i - 1].name] ? true : false; //condicion que dispara animacion de moverse hacia abajo del elemento
       return (
-        <InputContainer className="w-80">
+        <InputContainer isError={isPreviousElementHasError} key={i}>
           <label className="font-c-secondary margin-b-1">{label}</label>
           <FieldContainer>
             <Field
@@ -66,17 +68,29 @@ const FieldContainer = styled.div`
 `;
 
 const StyledForm = styled(Form)`
-  width: 70%;
+  width: 85%;
+  @media (min-width: 800px) {
+    width: 70%;
+  }
 `;
 const InputContainer = styled.div`
+  transition: all 300ms ease;
   position: relative;
   margin-bottom: 10px;
+  margin-top: ${({ isError }) => (isError ? '36px' : '0')};
+
+  @media (min-width: 800px) {
+    width: 80%;
+  }
 `;
 const ErrorContainer = styled.div`
   position: absolute;
-  width: 50%;
-  top: 25px;
-  left: 399px;
+  top: 62px;
+  @media (min-width: 800px) {
+    width: 50%;
+    top: 25px;
+    left: 399px;
+  }
 `;
 const ErrorSpan = styled.span`
   font-size: 0.9rem;

@@ -1,5 +1,5 @@
 import React from "react"
-import NameAcademy from "./nameAcademy"
+import NameAcademy from "../components/nameAcademy"
 
 
 const Nav    =   ()  =>
@@ -12,10 +12,10 @@ const Nav    =   ()  =>
 
                     <div id="nav" className="font-secondary fc-secondary ">
                         
-                        <div>Conócenos</div>
-                        <div>Servicios</div>
-                        <div>Nuestro Path</div>
-                        <div>Contactenos</div>
+                        <div className="cP">Conócenos</div>
+                        <div className="cP">Servicios</div>
+                        <div className="cP">Nuestro Path</div>
+                        <div className="cP">Contactenos</div>
 
                     </div>
                 </div> 

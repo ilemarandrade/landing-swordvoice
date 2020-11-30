@@ -1,28 +1,11 @@
 import React from 'react';
+import Nav from '../componentes/nav';
 
 const LayoutHome = () => {
   return (
     <div id="layoutHome">
-      <div id="header">
-        <div id="nameAcademy" className="perfectCentered">
-          <div className="font-primary ">
-            <p className="font-c-secondary " lang="en">
-              SwordVoice
-            </p>
-
-            <p className="font-c-primary " lang="en">
-              Academy
-            </p>
-          </div>
-        </div>
-
-        <div id="nav" className="font-secondary font-c-secondary ">
-          <div>Conócenos</div>
-          <div>Servicios</div>
-          <div>Nuestro Path</div>
-          <div>Contactenos</div>
-        </div>
-      </div>
+      
+      <Nav/>
 
       <div id="containerInteractionHome">
         <div id="interactionHome" className="perfectCentered text-align-c">

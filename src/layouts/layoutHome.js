@@ -4,8 +4,7 @@ import Nav from '../componentes/nav';
 const LayoutHome = () => {
   return (
     <div id="layoutHome">
-      
-      <Nav/>
+      <Nav />
 
       <div id="containerInteractionHome">
         <div id="interactionHome" className="perfectCentered text-align-c">
@@ -16,7 +15,7 @@ const LayoutHome = () => {
               SwordVoice Academy
             </p>
 
-            <p className="font-c-secondary">
+            <p className="font-c-terciary">
               <span className="font-w-600">Academia online </span>no tradicional
             </p>
           </div>

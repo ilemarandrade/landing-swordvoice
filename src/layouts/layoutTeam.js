@@ -5,7 +5,7 @@ import { dataMentors } from '../const/propsToComponents';
 const LayoutTeam = () => {
   return (
     <div id="layoutTeam">
-      <MentorContainer {...{dataMentors:dataMentors}}/>
+      <MentorContainer {...{ dataMentors }} />
     </div>
   );
 };

@@ -22,18 +22,25 @@ input:focus {
 .input-error {
   border: 2 px solid #ff7a00;
 }
+.link-container > a {
+  text-decoration: none;
+}
+
+.link-container > a:visited {
+  color: inherit;
+}
 
 .st0 {
   fill: white;
 }
 .font-c-primary {
-  color: #00c2ff;
+  color: #fff;
 }
 .font-c-secondary {
-  color: white;
+  color: #ff7a00;
 }
 .font-c-terciary {
-  color: #ff7a00;
+  color: #00c2ff;
 }
 
 .font-s-1 {
@@ -88,8 +95,14 @@ input:focus {
   text-align: justify;
 }
 
-.pt-3 {
+.padding-top-3 {
   padding-top: 3em;
+}
+.padding-3 {
+  padding: 3em;
+}
+.padding-2 {
+  padding: 2em;
 }
 .w-50 {
   width: 50%;
@@ -127,19 +140,15 @@ input:focus {
   display: flex;
   justify-content: flex-end;
 }
-.dfj-space-around
-{
+.dfj-space-around {
   justify-content: space-around;
 }
-.dfw-w{
-  flex-wrap:wrap;
+.dfw-w {
+  flex-wrap: wrap;
 }
-.dfa-center
-{
+.dfa-center {
   align-items: center;
 }
-
-
 
 .margin-b-0 {
   margin-bottom: 0 !important;
@@ -177,10 +186,8 @@ input:focus {
   width: 3em;
 }
 
-.cP
-{
-  cursor:pointer;
-
+.cP {
+  cursor: pointer;
 }
 
 #header {
@@ -193,38 +200,13 @@ input:focus {
   display: none;
 }
 
-#nameAcademy {
-  display: none;
-}
-/*#nameAcademy div{
-  position: relative
-  ;
-}
-#nameAcademy div p:nth-child(1){
-  font-size: 2em;
-
-}
-#nameAcademy div p:nth-child(2){
-  font-size: 1.5em;
-  position: absolute;
-  top: 1.2em;
-  left: 2.8em;
-
-}
-*/
-
 #layoutHome {
   height: 100vh;
   background: #000000;
 }
 #interactionHome {
   height: 90vh;
-  background: linear-gradient(
-      223.15deg,
-      rgba(5, 5, 5, 0) 37%,
-      rgba(0, 0, 0, 0.67) 95.63%
-    ),
-    url('./assets/img/WhatIsSwordvoiceMobile.jpg');
+  background: url('./assets/img/kid-1520705_1280-opaque.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -332,7 +314,7 @@ input:focus {
   margin-bottom: 1.5em;
 }
 #titlePaths {
-  background: #009bf2;
+  background: #000000;
   background-blend-mode: darken;
   font-size: 2.5em;
   text-align: center;
@@ -368,6 +350,29 @@ input {
   border: none;
   border-radius: 0.4em;
 }
+
+#nameAcademy {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  #nameAcademy {
+    display: flex;
+    position: absolute;
+    left: 4em;
+    top: 6vh;
+  }
+  #nameAcademy div p:nth-child(1) {
+    font-size: 2.5em;
+  }
+  #nameAcademy div p:nth-child(2) {
+    font-size: 1em;
+    position: absolute;
+    top: 2.4em;
+    left: 7.6em;
+  }
+}
+
 #nameAcademyContact div p:nth-child(1) {
   font-size: 3.5em;
 }
@@ -420,8 +425,6 @@ textarea {
 }
 
 @media only screen and (min-width: 992px) {
-  
-  
   #header {
     height: 10vh;
     justify-content: flex-end;
@@ -450,15 +453,9 @@ textarea {
     left: 12em;
   }
   #interactionHome {
-    background: linear-gradient(
-        223.15deg,
-        rgba(5, 5, 5, 0) 37%,
-        rgba(0, 0, 0, 0.67) 95.63%
-      ),
-      url('./assets/img/WhatIsSwordvoiceDesktop.jpg');
     background-size: cover;
     border-radius: 35em 0em 35em 0em;
-    border: 0.2em solid blue;
+    border: 0.1px solid #ff7a00;
     width: 100%;
     height: 100%;
     background-position-y: -8em;
@@ -471,21 +468,7 @@ textarea {
     height: 100%;
     margin-right: 3vw;
   }
-  #nameAcademy {
-    display: flex;
-    position: absolute;
-    left: 4em;
-    top: 6vh;
-  }
-  #nameAcademy div p:nth-child(1) {
-    font-size: 2.5em;
-  }
-  #nameAcademy div p:nth-child(2) {
-    font-size: 1em;
-    position: absolute;
-    top: 2.4em;
-    left: 7.6em;
-  }
+
   #layoutWhatIs {
     height: 100vh;
     flex-direction: row;
@@ -525,26 +508,22 @@ textarea {
     width: 100%;
   }
   .mentorContainer {
-    height: 80%;
-    width: 40%;
+    height: 500px;
+    width: 535px;
     border-radius: 2em;
     overflow: hidden;
-    background:rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
   }
-  .imgMentor{
+  .imgMentor {
     position: relative;
-    height: 88%;
-
-
+    height: 400px;
   }
-  .imgMentor p{
+  .imgMentor p {
     position: absolute;
     bottom: 0em;
     padding-left: 1.5em;
   }
-  .descriptionMentors
-  {
-
+  .descriptionMentors {
   }
   #layoutService {
     flex-direction: row;

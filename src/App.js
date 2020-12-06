@@ -8,7 +8,8 @@ import LayoutService from './layouts/layoutService';
 import LayoutPath from './layouts/layoutPath';
 import LayoutContact from './layouts/layoutContact/layoutContact';
 import { ThemeProvider } from 'styled-components';
-import {path, services} from "./const/propsToComponents.js";
+import { path, services } from './const/propsToComponents.js';
+import GeneralLayoutWrapper from './layouts/general/GeneralLayoutWrapper';
 
 const theme = {
   palette: {
@@ -36,12 +37,14 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <div style={{ fontSize: deviceWidth[1] + 'px' }} className="App">
-        <LayoutHome />
-        <LayoutWhatIs />
-        <LayoutTeam />
-        <LayoutService {...{services:services}} />
-        <LayoutPath {...{path:path}} />
-        <LayoutContact />
+        <GeneralLayoutWrapper>
+          <LayoutHome />
+          <LayoutWhatIs />
+          <LayoutTeam />
+          <LayoutService {...{ services }} />
+          <LayoutPath {...{ path }} />
+          <LayoutContact />
+        </GeneralLayoutWrapper>
       </div>
     </ThemeProvider>
   );

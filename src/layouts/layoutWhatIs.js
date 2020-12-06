@@ -6,9 +6,9 @@ const LayoutWhatIs = () => {
       <div id="whatIsText" className="flex-column display-flex">
         <div id="titleWhatIs" className="perfectCentered margin-b-3">
           <div className="font-primary position-relative">
-            <p className="font-c-secondary font-s-2 text-align-s">¿Que es</p>
-            <p className="font-c-secondary font-s-3 ">Swordvoice</p>
-            <p className="font-c-primary font-s-2 text-align-e">Academy</p>
+            <p className="font-c-primary font-s-2 text-align-s">¿Qué es</p>
+            <p className="font-c-primary font-s-3 ">Swordvoice</p>
+            <p className="font-c-secondary font-s-2 text-align-e">Academy</p>
             <p className="font-s-3">?</p>
           </div>
         </div>

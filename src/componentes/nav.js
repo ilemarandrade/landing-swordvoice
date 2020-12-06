@@ -1,27 +1,27 @@
-import React from "react"
-import NameAcademy from "../components/nameAcademy"
+import React from 'react';
+import NameAcademy from '../components/nameAcademy';
 
+const Nav = () => {
+  return (
+    <div id="header">
+      <NameAcademy />
 
-const Nav    =   ()  =>
-{
-    
-    return(
-            <div id="header">
+      <div id="nav" className="font-secondary font-c-primary ">
+        <div className="link-container">
+          <a href="#layoutTeam">Conócenos</a>
+        </div>
+        <div className="link-container">
+          <a href="#layoutService">Servicios</a>
+        </div>
+        <div className="link-container">
+          <a href="#layoutPath">Nuestro Path</a>
+        </div>
+        <div className="link-container">
+          <a href="#layoutContact">Contactenos</a>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-                    <NameAcademy/>
-
-                    <div id="nav" className="font-secondary fc-secondary ">
-                        
-                        <div className="cP">Conócenos</div>
-                        <div className="cP">Servicios</div>
-                        <div className="cP">Nuestro Path</div>
-                        <div className="cP">Contactenos</div>
-
-                    </div>
-                </div> 
-        
-    )
-
-}
-
-export default  Nav
+export default Nav;
